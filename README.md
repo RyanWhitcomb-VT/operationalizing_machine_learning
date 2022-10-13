@@ -10,19 +10,30 @@ This diagram, provided via the Udacity course, gives an overview of the flow of 
 ## Key Steps
 1. Authentication - User roles were established and verified for using Azure ML
 2. Auto ML Model - Registered the bank marketing data and trained a classification model on it
+First the data was uploaded as a dataset for easy consumption within AutoML.
 ![dataset_verification](images/dataset_verification.png)
+
+Then it was able to run a classification approach on the registered data.
 ![automl_success](images/automl_success.png)
 3. Deploy Best Model - Auto ML selected the best model, which was then deployed in Azure ML
+Once the automl was run, you can extract the best model run.
 ![top_model](images/top_model.png)
+Then the model was deployed for consumption by other applications.  However, application insights is being depreciated, and the ability to turn that on in V2 Azure is not possible anymore.  As a workaround, the Azure portal provides many direct ways to monitor the model performance and traffic over time.  Additionally, the logs can be retrieved as well.
 ![service_status_and_update](images/service_status_and_update.png)
 4. Enable Logging - Funcationality was enabled to check the model status and performance
+Jabber funcationality was not working in the V2 workspace.  The Azure portal allows other alternatives to going outside of the Azure ecosystem for monitoring and documentation.
 ![app_insight_jabber](images/app_insight_jabber.png)
 5. Consome Model End Points - Data was fed to the model to check functionality
+The model endpoints were tested for proper funcionality.  This can also be done manually through the UI.
 ![endpoint_python_verification](images/endpoint_python_verification.png)
 6. Create and Publish a Pipeline - A reusable code-driven approach to establishing an endpoint
+A pipeline can repeat all the above steps using repeatable and savable code.
 ![completed_pipeline](images/completed_pipeline.png)
+The pipeline can register data.
 ![pipeline_dataset](images/pipeline_dataset.png)
+The pipeline can create endpoints for models.
 ![pipeline_overview](images/pipeline_overview.png)
+Lastly, there is meta information about the pipeline performance itself, which is useful in a production setting.
 ![pipeline_run_details](images/pipeline_run_details.png)
 
 ## Screen Recording
