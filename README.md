@@ -37,5 +37,4 @@ Lastly, there is meta information about the pipeline performance itself, which i
 ![pipeline_run_details](images/pipeline_run_details.png)
 
 ## Screen Recording
-Screen Recording Demonstration is located at:
-
+Screen Recording Demonstration is located at: https://vimeo.com/759769414
