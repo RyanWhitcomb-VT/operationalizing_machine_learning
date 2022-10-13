@@ -21,6 +21,8 @@ Once the automl was run, you can extract the best model run.
 Then the model was deployed for consumption by other applications.  However, application insights is being depreciated, and the ability to turn that on in V2 Azure is not possible anymore.  As a workaround, the Azure portal provides many direct ways to monitor the model performance and traffic over time.  Additionally, the logs can be retrieved as well.
 ![service_status_and_update](images/service_status_and_update.png)
 4. Enable Logging - Funcationality was enabled to check the model status and performance
+The logging information shown above can also be executed as a python file
+![logs_python](images/logs_python.png)
 Jabber funcationality was not working in the V2 workspace.  The Azure portal allows other alternatives to going outside of the Azure ecosystem for monitoring and documentation.
 ![app_insight_jabber](images/app_insight_jabber.png)
 5. Consome Model End Points - Data was fed to the model to check functionality
@@ -30,11 +32,19 @@ The model endpoints were tested for proper funcionality.  This can also be done 
 A pipeline can repeat all the above steps using repeatable and savable code.
 ![completed_pipeline](images/completed_pipeline.png)
 The pipeline can register data.
-![pipeline_dataset](images/pipeline_dataset.png)
+![pipeline_dataset_2](images/pipeline_dataset_2.png)
 The pipeline can create endpoints for models.
 ![pipeline_overview](images/pipeline_overview.png)
 Lastly, there is meta information about the pipeline performance itself, which is useful in a production setting.
 ![pipeline_run_details](images/pipeline_run_details.png)
+Pipeline status images
+![pipeline_status_1](images/pipeline_status_1.png)
+![pipeline_status_2](images/pipeline_status_2.png)
 
 ## Screen Recording
 Screen Recording Demonstration is located at: https://vimeo.com/759929080
+
+## Standout Suggestions
+When training the automl model, an additional feature creation step can be made.  Instead of just taking the raw values for modeling, doing a feature creation step by normalizing data, categorizing ages, or removing unnecessary features such as day of week can improve model accuracy.
+
+For deploying the model, I found that deploying locally helped me debug some issues I was having with the deployment json file.  This is a good step that can be added in the production process.
