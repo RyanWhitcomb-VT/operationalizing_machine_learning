@@ -25,6 +25,8 @@ The logging information shown above can also be executed as a python file
 ![logs_python](images/logs_python.png)
 Jabber funcationality was not working in the V2 workspace.  The Azure portal allows other alternatives to going outside of the Azure ecosystem for monitoring and documentation.
 ![app_insight_jabber](images/app_insight_jabber.png)
+#### To be clear, Application Insight is able to be enabled on the version of the workspace I am on, here is the status after the above error.
+![app_insights_fail](images/app_insights_fail.png)
 5. Consome Model End Points - Data was fed to the model to check functionality
 The model endpoints were tested for proper funcionality.  This can also be done manually through the UI.
 ![endpoint_python_verification](images/endpoint_python_verification.png)
@@ -32,6 +34,7 @@ The model endpoints were tested for proper funcionality.  This can also be done 
 A pipeline can repeat all the above steps using repeatable and savable code.
 ![completed_pipeline](images/completed_pipeline.png)
 The pipeline can register data.
+![automl_data](images/automl_data.png)
 ![pipeline_dataset_2](images/pipeline_dataset_2.png)
 The pipeline can create endpoints for models.
 ![pipeline_overview](images/pipeline_overview.png)
